@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a id ="home" href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i id = "searchIcon" class="fa-solid fa-magnifying-glass"></i>
+                    <input id= "searchBox" class = "input1" type = "text" placeHolder ="Search" spellcheck = "false">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a id = "library-opt" href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png">
+                    <img class="hide" src="./assets/forward_icon.png">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-items hide">Explore Premium</button>
+                    <button id="ia" class="badge nav-items"><i id="d" class="fa-regular fa-circle-down"></i>Install App</button>
+                    <i class="fa-regular fa-circle-user nav-items"></i>
+                </div>
+            </div>
+            <div class="h2">
+                <h2 class = "heading1" >Recently Played</h2>
+                <a class="sa1" href="#">Show all</a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/khudabhi.png">
+                        <a class="apb" href="#" data-src = "songs/KhudaBhi.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Khuda Bhi</p>
+                    <p class="card-info"> Mohit Chauhan | 5:03 </p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/pachtaoge.png">
+                        <a class="apb" href="#" data-src = "songs/Pachtaoge.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Pachtaoge</p>
+                    <p class="card-info">Arijit, B Praak | 3:46</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/ranglageya.png">
+                        <a class="apb" href="#"  data-src = "songs/RangLageya.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Rang Lageya</p>
+                    <p class="card-info">Mohit Chauhan | 3:48</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img " src="./assets/tumhiho.png">
+                        <a class="apb" href="#" data-src = "songs/TumHiHo.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tum Hi Ho</p>
+                    <p class="card-info">Arijit Singh | 4:22</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/apnabanale.jpg">
+                        <a class="apb" href="#"  data-src = "songs/apnabanale.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Apna Bana Le</p>
+                    <p class="card-info">Arijit Singh | 4:21</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img " src="./assets/arjanvalley.jpg">
+                        <a class="apb" href="#" data-src = "songs/arjanvalley.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Arjan Vailly</p>
+                    <p class="card-info">Bhupinder Babbal | 3:02</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/dil.png">
+                        <a class="apb" href="#"  data-src = "songs/dil.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dil (Ek-Villan Returns)</p>
+                    <p class="card-info">Kaushik, Raghav Chaitanya | 5:09</p>
+                </div>
+
+
+
+
+
+                
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/aadat.jpg">
+                        <a class="apb" href="#" data-src = "songs/aadat.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Aadat</p>
+                    <p class="card-info">Atif Aslam | 5:33</p>
+                </div>
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/ajdinchadeya.jpg">
+                        <a class="apb" href="#" data-src = "songs/ajdinchadeya.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Aj Din Chadeya</p>
+                    <p class="card-info">Rahat Fateh Ali Khan | 5:17</p>
+                </div>
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/bolnahalkehalke.jpg">
+                        <a class="apb" href="#"  data-src = "songs/bolnahalkehalke.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Bol Na Halke Halke</p>
+                    <p class="card-info">Rahat Fateh Ali Khan | 5:06</p>
+                </div>
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/channave.jpg">
+                        <a class="apb" href="#"  data-src = "songs/channave.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Channa Ve</p>
+                    <p class="card-info">Akhil Sachdeva | 3:31</p>
+                </div>
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/darasal.jpg">
+                        <a class="apb" href="#"  data-src = "songs/darasal.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Darasal</p>
+                    <p class="card-info">Atif Aslam | 4:34</p>
+                </div>
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/dekhtedekhte.jpg">
+                        <a class="apb" href="#"  data-src = "songs/dekhtedekhte.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dekhte Dekhte</p>
+                    <p class="card-info">Atif Aslam | 4:16</p>
+                </div>
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/dildiyagallan.jpg">
+                        <a class="apb" href="#"  data-src = "songs/dildiyagallan.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dil Diya Gallan</p>
+                    <p class="card-info">Atif Aslam | 4:20</p>
+                </div>
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/dilmerinasune.jpg">
+                        <a class="apb" href="#"  data-src = "songs/dilmerinasune.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dil Meri Na Sune</p>
+                    <p class="card-info">Atif Aslam | 3:56</p>
+                </div>
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/diltobachaha.jpg">
+                        <a class="apb" href="#"  data-src = "songs/diltobachaha.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dil To Bacha Ha</p>
+                    <p class="card-info">Atif Aslam | 5:36</p>
+                </div>
+                <div class="card card1" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/humsafar.jpg">
+                        <a class="apb" href="#"  data-src = "songs/humsafar.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Humsafar</p>
+                    <p class="card-info">Akhil Sachdeva | 4:28</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <div class="h2">
+                <h2 class = "heading2">Made for You</h2>
+                <a class="sa2" href="#">Show all</a>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/dilokidoriyan1.webp">
+                        <a class="apb" href="#"  data-src = "songs/dilokidoriyan.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dilo Ki Doriyaan</p>
+                    <p class="card-info">Vishal Mishra | 3:00</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/gehraiyaan.png">
+                        <a class="apb" href="#" data-src = "songs/doobey.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Doobey</p>
+                    <p class="card-info">Lothika Jha | 3:39</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/galiyaan.png">
+                        <a class="apb" href="#" data-src = "songs/galiyaan.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Galiyaan Returns</p>
+                    <p class="card-info">Ankit tiwari | 5:50</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/humnashemein.png">
+                        <a class="apb" href="#" data-src = "songs/humnasheme.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Hum Nashe Me</p>
+                    <p class="card-info">Arijit Singh | 3:58</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/phirorkyachaiye.webp">
+                        <a class="apb" href="#" data-src = "songs/mujhefirorkyachaiye.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Phir Or Kya Chaiye</p>
+                    <p class="card-info">Arijit, Sachin-Jigar | 4:46</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/ramsiyaram.webp">
+                        <a class="apb" href="#"  data-src = "songs/ramsiyaram.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Ram Siya Ram</p>
+                    <p class="card-info">Ajay-Atul, Sachet-Tandon | 3:50</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/terehawale.jpg">
+                        <a class="apb" href="#" data-src = "songs/terehawale.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tere Hawale</p>
+                    <p class="card-info">Arijit Singh | 5:50</p>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="card card2" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/jeenajeena.jpg">
+                        <a class="apb" href="#"  data-src = "songs/jeenajeena.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Jeena Jeena</p>
+                    <p class="card-info">Atif Aslam | 3:49</p>
+                </div>
+                <div class="card card2" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/kesariya.jpg">
+                        <a class="apb" href="#"  data-src = "songs/kesariya.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Kesariya</p>
+                    <p class="card-info">Arijit Singh | 4:28</p>
+                </div>
+                <div class="card card2" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/malangsajna.webp">
+                        <a class="apb" href="#"  data-src = "songs/malangsajna.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Malang Sajna</p>
+                    <p class="card-info">Parampara Thakur, Sachet Tandon | 2:37</p>
+                </div>
+                <div class="card card2" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/matargashti.jpg">
+                        <a class="apb" href="#"  data-src = "songs/matargashti.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">matargashti</p>
+                    <p class="card-info">Mohit Chauhan, A.R Rahman | 5:28</p>
+                </div>
+                <div class="card card2" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/nadaanparinde.jpg">
+                        <a class="apb" href="#"  data-src = "songs/naadanparinde.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Naadan Parinde</p>
+                    <p class="card-info">Mohit Chauhan | 6:26</p>
+                </div>
+                <div class="card card2" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/orepiya.jpg">
+                        <a class="apb" href="#"  data-src = "songs/orepiya.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">O Re Piya</p>
+                    <p class="card-info">Rahat Fateh Ali Khan | 6:19</p>
+                </div>
+                <div class="card card2" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/paniyosa.jpg">
+                        <a class="apb" href="#"  data-src = "songs/paniyosa.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Paaniyo Sa</p>
+                    <p class="card-info">Atif Aslam | 3:56</p>
+                </div>
+                <div class="card card2" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/peeloon.jpg">
+                        <a class="apb" href="#"  data-src = "songs/peeloon.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Pee Loon</p>
+                    <p class="card-info">Mohit Chauhan | 4:48</p>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="h2">
+                <h2 class = "heading3">Featured Charts</h2>
+                <a class="sa3" href="#">Show all</a>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/terepyarme.jpg">
+                        <a class="apb" href="#" data-src = "songs/terepyarme.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tere Pyaar Mein</p>
+                    <p class="card-info">Arijit Singh | 2:57</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tumhekitnapyarkarte.jpg">
+                        <a class="apb" href="#" data-src = "songs/tumhekitnapyaarkrte.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tumhe kitna Pyar Karte</p>
+                    <p class="card-info">Mithoon, Arijit-Singh | 5:05</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tumkyamile.webp">
+                        <a class="apb" href="#" data-src = "songs/tumkyamile.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tum Kya Mile</p>
+                    <p class="card-info">Arijit Singh, Shreya Ghoshal | 4:37</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/pasoorinu.jpg">
+                        <a class="apb" href="#" data-src = "songs/pasoorinu.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Pasoori Nu</p>
+                    <p class="card-info">Arijit Singh, Rochak Kohli | 3:17</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/arjanvalley.jpg">
+                        <a class="apb" href="#" data-src = "songs/sariduniyajaladenge.mp3" ><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Saari Duniya Jalaa Denge</p>
+                    <p class="card-info">B Praak | 3:02</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/marjaavaan.jpg">
+                        <a class="apb" href="#" data-src = "songs/thodijagah.mp3" ><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Thodi Jagah</p>
+                    <p class="card-info">Arijit Singh, Tanishk Bagchi | 3:38</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/sanamre.jpg">
+                        <a class="apb" href="#" data-src = "songs/sanamre.mp3" ><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Sanam Re</p>
+                    <p class="card-info">Mithoon, Anirudh Bhola | 5:08</p>
+                </div>
+
+
+
+
+                <div class="card card3" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/nadaanparinde.jpg">
+                        <a class="apb" href="#"  data-src = "songs/phirseuddchala.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Phir Se Udd Chala</p>
+                    <p class="card-info">Mohit Chauhan | 4:31</p>
+                </div>
+                <div class="card card3" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/saiyaara.jpg">
+                        <a class="apb" href="#"  data-src = "songs/saiyaara.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Saiyaara</p>
+                    <p class="card-info">Saiyaara | 4:11</p>
+                </div>
+                <div class="card card3" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/sajdaa.jpg">
+                        <a class="apb" href="#"  data-src = "songs/sajdaa.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Sajdaa</p>
+                    <p class="card-info">Rahat Fateh Ali Khan | 6:05</p>
+                </div>
+                <div class="card card3" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/sanuekpalchain.jpg">
+                        <a class="apb" href="#"  data-src = "songs/sanuekpalchain.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Sanu Ek Pal Chain</p>
+                    <p class="card-info">Rahat Fateh Ali Khan | 3:30</p>
+                </div>
+                <div class="card card3" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/terabanjauga.jpg">
+                        <a class="apb" href="#"  data-src = "songs/terabanjauga.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tera Ban Jaunga</p>
+                    <p class="card-info">Akhil Sachdeva | 3:56</p>
+                </div>
+                <div class="card card3" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/terebin.jpg">
+                        <a class="apb" href="#"  data-src = "songs/terebin.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tere Bin</p>
+                    <p class="card-info">Rahat Fateh Ali Khan | 3:51</p>
+                </div>
+                <div class="card card3" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/teresangyaara.jpg">
+                        <a class="apb" href="#"  data-src = "songs/teresangyaara.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tere Sang Yaara</p>
+                    <p class="card-info">Atif Aslam | 4:50</p>
+                </div>
+                <div class="card card3" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/terikhairmanga.jpg">
+                        <a class="apb" href="#"  data-src = "songs/terikhairmanga.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Teri Khair Manga</p>
+                    <p class="card-info">Rahat Fateh Ali Khan | 4:10</p>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="h2">
+                <h2 class = "heading4">Desi Bollywood</h2>
+                <a class="sa4" href="#">Show all</a>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tuchaiye.jpg">
+                        <a class="apb" href="#"  data-src = "songs/tuchaiye.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tu Chaiye</p>
+                    <p class="card-info">Atif Aslam | 4:32</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tuhirab.jpg">
+                        <a class="apb" href="#" data-src = "songs/tuhirab.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tu Hi Rab</p>
+                    <p class="card-info">Rahat Fateh Ali Khan | 7:03</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tujaanena.jpg">
+                        <a class="apb" href="#" data-src = "songs/tujaanena.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tu Jaane Na</p>
+                    <p class="card-info">Atif Aslam | 5:41</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tujhkojopaaya.jpg">
+                        <a class="apb" href="#" data-src = "songs/tujhkojopaaya.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tujhko Jo Paaya</p>
+                    <p class="card-info">Mohit Chauhan | 3:04</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tumsehi.jpg">
+                        <a class="apb" href="#" data-src = "songs/tumsehi.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tum Se Hi</p>
+                    <p class="card-info">Mohit Chauhan | 5:23</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tunejonakaha.jpg">
+                        <a class="apb" href="#"  data-src = "songs/tunejonakaha.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tune Jo Na Kaha</p>
+                    <p class="card-info">Mohit Chauhan | 5:09</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/dooriyaan.jpg">
+                        <a class="apb" href="#" data-src = "songs/yehdooriyan.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dooriyan</p>
+                    <p class="card-info">Mohit Chauhan | 4:01</p>
+                </div>
+
+
+
+
+
+
+
+                <div class="card card4" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tumjoayezindagi.jpg">
+                        <a class="apb" href="#"  data-src = "songs/tumjoaaye.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tum Jo Aaye</p>
+                    <p class="card-info">Rahat Fateh Ali Khan | 4:48</p>
+                </div>
+                <div class="card card4" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tuhiyaarmera.jpg">
+                        <a class="apb" href="#"  data-src = "songs/tuhiyaarmera.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tu Hi Yaar Mera</p>
+                    <p class="card-info">Arijit Singh | 3:21</p>
+                </div>
+                <div class="card card4" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/humsafar.jpg">
+                        <a class="apb" href="#"  data-src = "songs/rokenaruke.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Roke Na Ruke Naina</p>
+                    <p class="card-info">Atif Aslam | 4:38</p>
+                </div>
+                <div class="card card4" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/pal.jpg">
+                        <a class="apb" href="#"  data-src = "songs/pal.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Pal</p>
+                    <p class="card-info">Arijit Singh | 4:07</p>
+                </div>
+                <div class="card card4" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/janamjanam.jpg">
+                        <a class="apb" href="#"  data-src = "songs/janamjanam.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Janam Janam</p>
+                    <p class="card-info">Arijit Singh | 3:57</p>
+                </div>
+                <div class="card card4" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/terebina.jpg">
+                        <a class="apb" href="#"  data-src = "songs/terebinaa.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tere Bina</p>
+                    <p class="card-info">Arijit Singh | 4:12</p>
+                </div>
+                <div class="card card4" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/terayaarhoonmain.jpg">
+                        <a class="apb" href="#"  data-src = "songs/terayaarhoonmai.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Tera Yaar Hoon Main</p>
+                    <p class="card-info">Arijit Singh | 4:24</p>
+                </div>
+                <div class="card card4" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/terafitoor.jpg">
+                        <a class="apb" href="#"  data-src = "songs/terafitoor.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">tera Fitoor</p>
+                    <p class="card-info">Arijit Singh | 5:10</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="h2">
+                <h2 class = "heading5">Hindi Romance</h2>
+                <a class="sa5" href="#">Show all</a>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/sochnasake.jpg">
+                        <a class="apb" href="#" data-src = "songs/sochnasake.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Soch Na Sake</p>
+                    <p class="card-info">Arijit Singh | 4:40</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/saware.jpg">
+                        <a class="apb" href="#" data-src = "songs/saware.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Saaware</p>
+                    <p class="card-info">Arijit Singh | 5:21</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/osaathi.jpg">
+                        <a class="apb" href="#" data-src = "songs/osaathi.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">O Saathi</p>
+                    <p class="card-info">Atif Aslam | 4:11</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/palpaldilkepaas.jpg">
+                        <a class="apb" href="#" data-src = "songs/rehnatupal.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Pal Pal Dil Ke Paas</p>
+                    <p class="card-info">Arijit Singh | 4:14</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/palbhar.jpg">
+                        <a class="apb" href="#" data-src = "songs/palbhar.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Pal Bhar</p>
+               
+                    <p class="card-info">Arijit Singh | 4:34</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/khairiyat.jpg">
+                        <a class="apb" href="#" data-src = "songs/khairiyat.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Khairiyat</p>
+                    <p class="card-info">Arijit Singh | 4:30</p>
+                </div>
+                <div class="card">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/ikvaariaa.jpg">
+                        <a class="apb" href="#" data-src = "songs/lambiyaansi.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Lambiyaan Si Judaiyaan</p>
+                    <p class="card-info">Arijit Singhb | 3:58</p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="card card5" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/ikvaariaa.jpg">
+                        <a class="apb" href="#"  data-src = "songs/ikvaariaa.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Ik Vaari Aa</p>
+                    <p class="card-info">Arijit Singh | 4:34</p>
+                </div>
+                <div class="card card5" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/hawayein.jpg">
+                        <a class="apb" href="#"  data-src = "songs/hawayein.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Hawayein</p>
+                    <p class="card-info">Arijit Singh | 4:50</p>
+                </div>
+                <div class="card card5" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/hamariadhuri.jpg">
+                        <a class="apb" href="#"  data-src = "songs/hamariaadhuri.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Hamari Aadhuri Kahani</p>
+                    <p class="card-info">Arijit Singh | 6:38</p>
+                </div>
+                <div class="card card5" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/ghungroo.jpg">
+                        <a class="apb" href="#"  data-src = "songs/ghungroo.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Ghungroo</p>
+                    <p class="card-info">Arijit Singh | 5:02</p>
+                </div>
+                <div class="card card5" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/dilnajaaneya.jpg">
+                        <a class="apb" href="#"  data-src = "songs/dilnajaaneya.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dil Na Jaaneya</p>
+                    <p class="card-info">Rachak Kohli | 3:03</p>
+                </div>
+                <div class="card card5" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/dekhahazarodafa.jpg">
+                        <a class="apb" href="#"  data-src = "songs/dekhahazarodafa.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dekha Hazaaro Dafa</p>
+                    <p class="card-info">Atif Aslam | 3:30</p>
+                </div>
+                <div class="card card5" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/dilmerinasune.jpg">
+                        <a class="apb" href="#"  data-src = "songs/dilmerinasune.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Dil Meri Na Sune</p>
+                    <p class="card-info">Atif Aslam | 3:56</p>
+                </div>
+                <div class="card card5" style="display:none">
+                    <div class="pbtn">
+                        <img class="card-img" src="./assets/tujhekitnachanelage.jpg">
+                        <a class="apb" href="#"  data-src = "songs/bekhayali.mp3"><img class="pb" src="./assets/Spotify Play Button.png"></a>
+                    </div>
+                    <p class="card-title">Bekhayali</p>
+                    <p class="card-info">Sachet Tandon | 6:10</p>
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="music-player">
+            <div class="album">
+                <img id ="album-image" src="./assets/spotify.png">
+                <div class="p">
+                    <button id = "song-name">Song Name</button>
+                    <button id = "artist" >Singer</button>
+                </div>
+                <button class="album-icon-1"><img src="./Homework Assets/album_icon1.png"></button>
+        
+                <img class="album-icon-2" src="./Homework Assets/album_icon2.png">
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon shuffle">
+                    <img src="./assets/player_icon2.png" class="player-control-icon prevButton ">
+                    <!-- <a class =".apb"><img  href = "#" data-src = "songs/KhudaBhi.mp3"></a> -->
+                    <a id = "curr-play" href="#" ><img class="player-control-icon play" src="./assets/pause_button.png"></a>
+                    <img src="./assets/player_icon4.png"  class="player-control-icon nextButton ">
+                    <img src="./assets/player_icon5.png" class="player-control-icon loop">
+                </div>
+                <div class="playback-bar">
+                    <span id="curr-timer">0:00</span>
+                    <input type="range" min="0" max="1" step = "0.01" value="0" id="progress-bar" step="1">
+                    <span id="tot-timer">0:00</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="./Homework Assets/controls_icon1.png" class="control-icon ci1">
+                <img src="./Homework Assets/controls_icon2.png" class="control-icon ci2">
+                <img src="./Homework Assets/controls_icon3.png" class="control-icon ci3">
+                <img src="./Homework Assets/controls_icon4.png" class="control-icon ci4">
+                <img src="./Homework Assets/controls_icon5.png" class="control-icon ci5">
+                <input class = "volume" type="range" min="0" max="100" value="100" id= "volume-bar" step="0.01">
+            </div>
+        </div>
+    </div>
+
+    <script src ="script.js"></script>
+
+</body>
+</html>
