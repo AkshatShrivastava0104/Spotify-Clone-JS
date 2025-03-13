@@ -1,6 +1,2 @@
 # Spotify-Clone-JS   
  
- 
- 
- 
- 
