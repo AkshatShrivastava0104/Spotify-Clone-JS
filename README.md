@@ -11,7 +11,7 @@ A simple Spotify clone with only the music player functionality, built for seaml
 - 🔊 Volume control
 - 📜 Display current track details  
 - 🎧 Responsive design for all devices
-
+  
 
 ## Tech Stack
 
