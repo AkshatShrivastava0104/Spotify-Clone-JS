@@ -9,7 +9,7 @@ A simple Spotify clone with only the music player functionality, built for seaml
 - 🎶 Play, Pause, and Seek songs
 - ⏭️ Next & Previous track controls
 - 🔊 Volume control
-- 📜 Display current track details
+- 📜 Display current track details  
 - 🎧 Responsive design for all devices
 
 
