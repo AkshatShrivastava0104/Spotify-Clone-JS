@@ -1,4 +1,4 @@
-
+ 
 # 🎵 Spotify Clone - Music Player 🎵
 
 A simple Spotify clone with only the music player functionality, built for seamless audio playback.
