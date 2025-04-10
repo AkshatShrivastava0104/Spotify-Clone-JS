@@ -21,8 +21,8 @@ A simple Spotify clone with only the music player functionality, built for seaml
 
 ## Screenshots
 
-![App Screenshot](![Screenshot (73)](https://github.com/user-attachments/assets/4fe7a3a6-d042-4b5a-9ac6-389bfb954f49)
-)
+![Screenshot (73)](https://github.com/user-attachments/assets/4fe7a3a6-d042-4b5a-9ac6-389bfb954f49)
+
 
 
 ## Installation
