@@ -4,7 +4,7 @@
 A simple Spotify clone with only the music player functionality, built for seamless audio playback.
 
  
-## Features
+## Features 
 
 - 🎶 Play, Pause, and Seek songs
 - ⏭️ Next & Previous track controls
